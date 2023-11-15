@@ -1,0 +1,53 @@
+is_global = true
+build_property.TargetFramework = net7.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AppMauiP
+build_property.ProjectDir = C:\Users\camil\Downloads\AppMauiNuevo\AppMauiNuevo\AppMauiP\AppMauiP\
+
+[C:/Users/camil/Downloads/AppMauiNuevo/AppMauiNuevo/AppMauiP/AppMauiP/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppMauiP.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/camil/Downloads/AppMauiNuevo/AppMauiNuevo/AppMauiP/AppMauiP/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppMauiP.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/camil/Downloads/AppMauiNuevo/AppMauiNuevo/AppMauiP/AppMauiP/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppMauiP.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/camil/Downloads/AppMauiNuevo/AppMauiNuevo/AppMauiP/AppMauiP/NuevoProductoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppMauiP.NuevoProductoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = NuevoProductoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = NuevoProductoPage.xaml
+
+[C:/Users/camil/Downloads/AppMauiNuevo/AppMauiNuevo/AppMauiP/AppMauiP/ProductoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppMauiP.ProductoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ProductoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ProductoPage.xaml
+
+[C:/Users/camil/Downloads/AppMauiNuevo/AppMauiNuevo/AppMauiP/AppMauiP/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppMauiP.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/camil/Downloads/AppMauiNuevo/AppMauiNuevo/AppMauiP/AppMauiP/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppMauiP.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

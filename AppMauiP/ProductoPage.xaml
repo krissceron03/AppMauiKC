@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMauiP.ProductoPage"
+             Title="ProductoPage">
+    <VerticalStackLayout>
+        <HorizontalStackLayout BackgroundColor="FloralWhite">
+
+            <Image 
+            Source="dotnet_bot.png" 
+            HeightRequest="50"
+            WidthRequest="100"
+
+        />
+            <Label 
+            Text="Productos"
+            FontSize="30"
+            TextColor="Blue"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        </HorizontalStackLayout>
+
+        <Button
+            x:Name="CounterBtn"
+            Text="Nuevo Producto"
+            FontSize="20"
+            HorizontalOptions="Fill" 
+            Clicked="OnClicNuevoProducto"/>
+        <ListView x:Name="ListaProductos" RowHeight="80">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical">
+                            <Image Source="dotnet_bot.png"
+                                   HeightRequest="50"
+                                   WidthRequest="100"/>
+                            <Label
+                            Text="{Binding nombre}"
+                            VerticalOptions="Start"/>
+                            <Label
+                            Text="{Binding cantidad}"
+                            VerticalOptions="End"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </VerticalStackLayout>
+</ContentPage>
