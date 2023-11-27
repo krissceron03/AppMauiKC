@@ -25,8 +25,13 @@ namespace AppMauiP.Utils
             nombre = "Producto 2",
             descripcion="Descripcion 2",
             cantidad=2
+            },
+            new Producto{
+            idProducto=3,
+            nombre = "Producto 3000",
+            descripcion="Descripcion 3000",
+            cantidad=400
             }
-
         };
     }
 }

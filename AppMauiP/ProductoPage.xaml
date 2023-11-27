@@ -27,14 +27,17 @@
             FontSize="20"
             HorizontalOptions="Fill" 
             Clicked="OnClicNuevoProducto"/>
-        <ListView x:Name="ListaProductos" RowHeight="80">
 
+        <ListView x:Name="ListaProductos" 
+                  RowHeight="80"
+                  ItemSelected="OnClickShowDetails" >
+            
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout Orientation="Vertical">
                             <Image Source="dotnet_bot.png"
-                                   HeightRequest="50"
+                                   HeightRequest="35"
                                    WidthRequest="100"/>
                             <Label
                             Text="{Binding nombre}"
@@ -46,6 +49,7 @@
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
+                
         </ListView>
     </VerticalStackLayout>
 </ContentPage>

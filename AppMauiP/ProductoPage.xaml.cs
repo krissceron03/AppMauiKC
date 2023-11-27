@@ -22,6 +22,17 @@ public partial class ProductoPage : ContentPage
         var toast = Toast.Make("On Click Boton Nuevo Producto", ToastDuration.Short, 14);
         await toast.Show();
     }
+    private async void OnClickShowDetails(object sender, SelectedItemChangedEventArgs e)
+    {
+        var toast = CommunityToolkit.Maui.Alerts.Toast.Make("Click en ver producto", ToastDuration.Short, 14);
+
+        await toast.Show();
+        Producto producto = e.SelectedItem as Producto;
+        await Navigation.PushAsync(new DetalleProductoPage()
+        {
+            BindingContext = producto,
+        });
+    }
     //metodo de actualización
     protected override void OnAppearing()
     {

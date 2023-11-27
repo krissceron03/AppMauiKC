@@ -19,6 +19,8 @@
             </TableRoot>
         </TableView>
         <Button Text="Guardar Producto"
-            Clicked="OnClickGuardarProducto"/>
+                FontSize="15"
+                Margin="5"
+                Clicked="OnClickGuardarProducto"/>
     </VerticalStackLayout>
 </ContentPage>
