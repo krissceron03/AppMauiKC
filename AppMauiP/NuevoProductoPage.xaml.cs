@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using AppMauiP.Models;
+using AppMauiP.Service;
 using CommunityToolkit.Maui.Alerts;
 using CommunityToolkit.Maui.Core;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -9,11 +10,14 @@ namespace AppMauiP;
 public partial class NuevoProductoPage : ContentPage
 {
     private Producto _producto;
-    public NuevoProductoPage()
-	{
-		InitializeComponent();
+    private readonly APIService _APIService;
+    public NuevoProductoPage(APIService apiservice)
+    {
+        InitializeComponent();
+        _APIService = apiservice;
+    }
        
-	}
+	
     protected override void OnAppearing()
     {
         base.OnAppearing();
@@ -32,6 +36,7 @@ public partial class NuevoProductoPage : ContentPage
             _producto.nombre = nombre.Text;
             _producto.cantidad = Int32.Parse(cantidad.Text);
             _producto.descripcion = descripcion.Text;
+            await _APIService.PutProducto(_producto.idProducto, _producto);
         }
         else
         {
@@ -44,8 +49,8 @@ public partial class NuevoProductoPage : ContentPage
                 cantidad = Int32.Parse(cantidad.Text)
             };
 
-            Utils.Utils.ListaProductos.Add(producto);
-           
+            await _APIService.PostProducto(producto);
+
         }
         await Navigation.PopModalAsync();
 
